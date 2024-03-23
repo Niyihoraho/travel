@@ -40,7 +40,7 @@
 .blogs .content-blog .blog .image {
   position: relative;
   width: 100%;
-  height: 40vh;
+  height: 35vh;
 }
 .blogs .content-blog .blog .image img {
   width: 100%;
@@ -79,13 +79,13 @@
   z-index: -1;
 }
 .blogs .content-blog .blog .title {
-  margin: 10px 0;
+  margin: 6px 0;
 }
 .blogs .content-blog .blog .title h1 {
   color: var(--SecondaryColor);
   font-size: 1rem;
   margin: 4px 0px;
-  padding: 5px 15px;
+  padding: 2px 15px;
 }
 .blogs .content-blog .blog .title p {
   font-size: 0.75rem;
