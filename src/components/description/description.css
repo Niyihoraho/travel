@@ -1,0 +1,54 @@
+.description .content-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 2px;
+  padding: 50px 0;
+}
+.description .content-description .left {
+  flex-basis: 40%;
+}
+.description .content-description .left .description h2 {
+  color: var(--SecondaryColor);
+  margin-bottom: 0.4rem;
+}
+.description .content-description .left .description p {
+  text-align: justify;
+  font-size: 0.85rem;
+}
+.description .content-description .left .location h2 {
+  color: var(--SecondaryColor);
+}
+.description .content-description .left .location .pro p {
+  font-weight: 600;
+  color: grey;
+  margin-right: 10px;
+}
+.description .content-description .left .location .pro span {
+  font-weight: 400;
+  font-size: 0.78rem;
+}
+.description .content-description .left .dist p {
+  font-weight: 600;
+  color: grey;
+  margin-right: 10px;
+}
+.description .content-description .left .dist span {
+  font-weight: 400;
+  font-size: 0.78rem;
+}
+.description .content-description .right {
+  flex-basis: 50%;
+}
+.description .content-description .right h2 {
+  color: var(--SecondaryColor);
+}
+.description .content-description .right .map {
+  width: 100%;
+  height: 70vh;
+}
+.description .content-description .right .map img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=description.css.map */

@@ -1,0 +1,53 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+}
+
+:root{
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187,85%, 43%), hsl(199,100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190,190,190);
+  --inputText: rgb(239,239,239);
+  --bodyColor: rgb(240,240,246);
+  --cardBg: rgb(255,225,235);
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.container{
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid{
+  display: grid;
+  align-items: center;
+}
+
+
+ body{
+  background: var(--bodyColor);
+ }
+ /* above style is defoult style that will apply to all section*/
+ 

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.blogs .textt {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: var(--SecondaryColor);
+}
+.blogs .textt h1 {
+  color: rgb(27, 27, 27);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+}
+.blogs .content-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blogs .content-blog .blog {
+  width: calc(35% - 30px);
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  border-radius: 4px;
+  box-shadow: 0 4px 5px rgba(155, 166, 166, 0.7);
+}
+.blogs .content-blog .blog .image {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+}
+.blogs .content-blog .blog .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs .content-blog .blog .image .blog-date {
+  position: absolute;
+  width: 60px;
+  height: 45px;
+  top: 30px;
+  left: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--gradientColor);
+}
+.blogs .content-blog .blog .image .blog-date h1 {
+  font-size: 0.8rem;
+}
+.blogs .content-blog .blog .image .blog-date small {
+  font-size: 0.8rem;
+  color: whitesmoke;
+}
+.blogs .content-blog .blog .image .blog-date::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: -15px;
+  left: 0;
+  border: 8px solid;
+  border-color: transparent var(--SecondaryColor) var(--SecondaryColor) transparent;
+  z-index: -1;
+}
+.blogs .content-blog .blog .title {
+  margin: 10px 0;
+}
+.blogs .content-blog .blog .title h1 {
+  color: var(--SecondaryColor);
+  font-size: 1rem;
+  margin: 4px 0px;
+  padding: 5px 15px;
+}
+.blogs .content-blog .blog .title p {
+  font-size: 0.75rem;
+  text-align: justify;
+  font-weight: 500;
+  color: rgba(23, 23, 23, 0.888);
+  padding: 10px 15px;
+}
+.blogs .content-blog .blog:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=blogpage.css.map */

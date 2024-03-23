@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgba(239, 239, 239, 0.886);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBg: rgb(255, 225, 235);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--SecondaryColor);
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.main .container .text {
+  margin-bottom: 2rem;
+}
+.main .container .roww {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main .container .roww .cardDestination {
+  width: calc(40% - 80px);
+  background: rgb(236, 245, 247);
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgb(156, 184, 189);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.main .container .roww .cardDestination .image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.main .container .roww .cardDestination .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.9s;
+}
+.main .container .roww .cardDestination .image img:hover {
+  border: 4px solid white;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.main .container .roww .cardDestination .title,
+.main .container .roww .cardDestination .price,
+.main .container .roww .cardDestination .divider,
+.main .container .roww .cardDestination .details,
+.main .container .roww .cardDestination .btn {
+  padding-bottom: 20px;
+  padding: 0 20px;
+}
+.main .container .roww .cardDestination .title h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.main .container .roww .cardDestination .title p {
+  color: var(--greyText);
+}
+.main .container .roww .cardDestination .title p .icon {
+  font-size: 1rem;
+  color: var(--textColor);
+  margin-right: 3px;
+  transform: translateY(10%);
+}
+.main .container .roww .cardDestination .price {
+  display: flex;
+  justify-content: space-between;
+}
+.main .container .roww .cardDestination .price h3 {
+  font-size: 0.9rem;
+}
+.main .container .roww .cardDestination .price p {
+  font-size: 0.9rem;
+}
+.main .container .roww .cardDestination .divider {
+  width: 95%;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 5px;
+}
+.main .container .roww .cardDestination .details {
+  margin: 10px 0;
+}
+.main .container .roww .cardDestination .details p {
+  font-size: 0.79rem;
+  color: var(--textColor);
+  text-align: justify;
+  font-weight: 500;
+}
+.main .container .roww .cardDestination .btn {
+  padding: 4px 30px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding-top: 4px;
+  background: var(--gradientColor);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.main .container .roww .cardDestination .btn a {
+  display: inline-block;
+  color: var(--whiteColor);
+  transform: translateY(-10%);
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+}
+.main .container .roww .cardDestination .btn a .icon {
+  margin: 1px 5px;
+  font-size: 1.1rem;
+  transform: translateY(23%);
+}
+.main .container .roww .cardDestination .btn:hover {
+  background: var(--SecondaryColor);
+}
+@media (max-width: 1000px) {
+  .main .container .roww {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main .container .roww .cardDestination {
+    width: calc(50% - 22px);
+  }
+}
+@media (max-width: 720px) {
+  .main .container .roww {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .main .container .roww .cardDestination {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */

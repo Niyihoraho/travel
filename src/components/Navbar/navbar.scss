@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgba(239, 239, 239, 0.886);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBg: rgb(255, 225, 235);
+}
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("asset/f1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .navBar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: var(--whiteColorDeam);
+    z-index: 100;
+    box-shadow: 0 3px 5px rgba(56, 79, 69, 0.8);
+    padding-top: 10px;
+    color: rgba(90, 108, 107, 0.6);
+
+    .right-link ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        padding: 3px 10px;
+        a {
+          color: var(--textColor);
+          font-size: small;
+          font-weight: 540;
+          &:hover {
+            color: var(--SecondaryColor);
+          }
+        }
+      }
+      .btn {
+        padding: 3px 40px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        background: var(--gradientColor);
+        cursor: pointer;
+        a {
+          color: var(--whiteColor);
+        }
+        &:hover {
+          background: var(--SecondaryColor);
+        }
+      }
+    }
+    .left-logo {
+      transform: translateY(-30%);
+      .logo {
+        color: var(--blackColor);
+        font-weight: bold;
+      }
+      .icon {
+        color: var(--PrimaryColor);
+      }
+    }
+  }
+
+  .tagle-menu {
+    display: none;
+  }
+
+  @media screen and (max-width: 770px) {
+    .right-link {
+      display: none;
+    }
+    .tagle-menu {
+      display: flex;
+      color: var(--PrimaryColor);
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    max-width: 1100px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    top: 35%;
+    .text {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: var(--whiteColor);
+      h1 {
+        margin-top: 10px;
+        font-size: 1.8rem;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+    .card {
+      width: 100%;
+      position: relative;
+      background: var(--whiteColorDeam);
+      height: max-content;
+      padding: 36px 5px;
+      border-radius: 7px;
+      margin-top: 40px;
+      box-shadow: 0 3px 5px rgb(21, 30, 21);
+      form {
+        display: flex;
+        justify-content: space-around;
+        .textInput,
+        .textInput,
+        .price {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .textInput {
+          label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--textColor);
+          }
+        }
+        .dateInput {
+          label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--textColor);
+          }
+          .input {
+            padding: 0 1rem;
+            input {
+              padding: 0 4rem;
+            }
+          }
+        }
+        .price {
+          span {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--textColor);
+          }
+          .input {
+            padding: 0 1rem;
+            input {
+              width: 100%;
+              accent-color: var(--textColor);
+              padding: 0 4rem;
+            }
+          }
+        }
+        .input {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 30px;
+          padding: 0 3rem;
+          background: rgba(224, 224, 224, 0.865);
+          border-radius: 3rem;
+          margin-top: 1rem;
+
+          input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: none;
+            color: var(--greyText);
+            font-weight: 400;
+            &::placeholder {
+              font-size: small;
+            }
+          }
+          .icon {
+            position: relative;
+            font-size: 1rem;
+            left: 20%;
+          }
+        }
+      }
+
+      .filter {
+        position: absolute;
+        top: 92%;
+        left: 39%;
+
+        .btn {
+          padding: 7px 40px;
+          border: none;
+          outline: none;
+          border-radius: 30px;
+          background: var(--gradientColor);
+          cursor: pointer;
+          a {
+            color: var(--whiteColor);
+            font-size: 1rem;
+            font-weight: 500;
+          }
+          &:hover {
+            background: var(--SecondaryColor);
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1005px) {
+    form {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      padding: 0 2rem;
+
+      span p,
+      h3 {
+        margin-left: 1rem;
+      }
+
+      .input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        padding: 0 3rem;
+        background: rgba(224, 224, 224, 0.865);
+        border-radius: 3rem;
+        margin-top: 1rem;
+        margin-left: 0.4rem;
+
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          background: none;
+          color: var(--greyText);
+          font-weight: 400;
+          &::placeholder {
+            font-size: small;
+          }
+        }
+        .icon {
+          position: relative;
+          font-size: 1rem;
+          left: 20%;
+        }
+      }
+      .textInput {
+        label {
+          font-size: 0.78rem;
+          font-weight: 600;
+          color: var(--textColor);
+          margin-left: 0.4rem;
+        }
+      }
+      .dateInput {
+        label {
+          font-size: 0.78rem;
+          font-weight: 600;
+          color: var(--textColor);
+          padding-left: 1rem;
+        }
+        .input {
+          padding: 0 1rem;
+          input {
+            padding: 0 4rem;
+          }
+        }
+      }
+      .price {
+        span {
+          font-size: 0.78rem;
+          font-weight: 600;
+          color: var(--textColor);
+        }
+        .input {
+          padding: 0 1rem;
+          input {
+            width: 100%;
+            accent-color: var(--textColor);
+            padding: 0 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 855px) {
+    .card {
+      form {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+        .textInput,
+        .textInput,
+        .price {
+          display: flex;
+          flex-direction: column;
+        }
+        .price {
+          position: relative;
+          left: -24%;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 693px) {
+    .content {
+      .card {
+        width: 100%;
+        position: relative;
+        background: var(--whiteColorDeam);
+        height: max-content;
+        padding: 36px 5px;
+        border-radius: 7px;
+        margin-top: 40px;
+        box-shadow: 0 3px 5px rgb(21, 30, 21);
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          width: 100%;
+          .price {
+            position: static;
+          }
+          .textInput {
+            width: 100%;
+          }
+          .dateInput {
+            width: 100%;
+          }
+          .price {
+            width: 100%;
+          }
+
+          .input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            padding: 0 3rem;
+            background: rgba(224, 224, 224, 0.865);
+            border-radius: 3rem;
+            margin-top: 1rem;
+
+            input {
+              width: 100%;
+              border: none;
+              outline: none;
+              background: none;
+              color: var(--greyText);
+              font-weight: 400;
+              &::placeholder {
+                font-size: small;
+              }
+            }
+            .icon {
+              position: relative;
+              font-size: 1rem;
+              left: 10%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .filter {
+      position: absolute;
+      top: 92%;
+      left: 190%;
+      transform: translateY(10%);
+      transform: translateX(-20%);
+    }
+  }
+
+  .bar{
+
+    display: none;
+    
+  }
+
+  .nav {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: rgba(90, 108, 107, 0.8);
+    backdrop-filter: blur(5px);
+    line-height: 3;
+    transition: width 0.5s ease;
+    
+  
+    .leftLogo {
+      position: relative;
+      background: linear-gradient(
+        to right,
+        rgba(16, 181, 203, 0.99),
+        rgba(0, 115, 168, 0.99)
+      );
+      height: max-content;
+      padding: 9px 10px;
+      display: flex;
+      justify-content: Space-between;
+      .logo {
+        color: var(--blackColor);
+        font-weight: bold;
+      }
+      .icon {
+        color: white;
+      }
+
+      .close{
+        color:white;
+        cursor:pointer;
+        .iconClose{   
+          font-size:1.9rem;
+          transform: translateY(30%);
+        }
+      }
+     
+    }
+    .rightLink{
+      transform: translateY(0%);
+      ul {
+        padding:20px 20px,
+      }
+    }
+  }
+  .link {
+    color: white;
+    &:hover{
+      color: var(--SecondaryColor);
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.guides {
+    margin: 70px 0;
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--SecondaryColor);
+        h2{
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 10px;
+            margin-top: 10px;
+          }
+          h1{
+            color: rgb(27, 27, 27);
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            
+          }
+      }
+
+    .content-guides {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+          
+        .guide {
+            width: calc(30% - 70px);
+            display: flex;
+            height: max-content;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            transition: all 0.5s;
+
+            .image {
+                position: relative;
+                width: 100%;
+                height: 250px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.8s; /* Add transition here */
+                }
+                .icons{
+                  position: absolute;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: rgba(0, 0, 0, 0.474); 
+                  z-index: 10; 
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  opacity: 0;
+                  transition: transform 0.5s;
+                  
+                  .icon{
+                    font-size: 2.5rem;
+                    color: var(--SecondaryColor);
+                    border: 1px solid var(--SecondaryColor);
+                    margin: 0 2px;
+                    padding: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        background: var(--SecondaryColor);
+                        color: white;
+                    }
+                  }
+                  
+                }
+                .icons > *{
+                    transform: translateY(25px);
+                    transition: transform 0.5s;
+                }
+                
+            }
+
+            .title {
+                padding-bottom: 30px;
+                margin-top: 25px;
+                text-align: center;
+                transition: all 0.8s;
+                
+                h1 {
+                    font-size: 1.24rem;
+                    font-weight: 400;
+                    color: var(--SecondaryColor);
+                }
+
+                h2 {
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    color: rgb(107, 105, 105);
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 4px 5px rgba(155, 166, 166, 0.7);
+                cursor: pointer;
+
+                .image img {
+                    width: 100%;
+                    transform: scale(1.2);
+                }
+              
+                
+                .icons > *{
+                    transform: translateY(0px);
+                  
+                }
+                .icons{
+                    opacity: 1;
+                }
+                
+            }
+        }
+    }
+}

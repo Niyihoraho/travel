@@ -1,0 +1,69 @@
+.services {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("asset/f1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--SecondaryColor);
+}
+.services .title h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 10px;
+  margin-top: 20px;
+}
+.services .title h1 {
+  color: rgb(245, 240, 240);
+  margin-top: 10px;
+}
+.services .content-services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 30px;
+}
+.services .content-services .left,
+.services .content-services .middle,
+.services .content-services .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgba(16, 181, 203, 0.3), rgba(0, 115, 168, 0.2));
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 30px 40px;
+  margin: 0 20px;
+  color: white;
+}
+.services .content-services .left p,
+.services .content-services .middle p,
+.services .content-services .right p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+.services .content-services .left .icon,
+.services .content-services .middle .icon,
+.services .content-services .right .icon {
+  border: 2px solid white;
+  color: white;
+  padding: 15px 24px;
+}
+.services .content-services .left:hover,
+.services .content-services .middle:hover,
+.services .content-services .right:hover {
+  background: var(--gradientColor);
+  box-shadow: 0 5px 10px rgba(36, 58, 43, 0.779);
+  cursor: pointer;
+  transition: 0.5s;
+}/*# sourceMappingURL=service.css.map */

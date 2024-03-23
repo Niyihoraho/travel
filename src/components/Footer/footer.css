@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgba(239, 239, 239, 0.886);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBg: rgb(255, 225, 235);
+}
+
+.footer {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("f1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.footer .container {
+  height: 100%;
+}
+.footer .container .contact {
+  position: relative;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .contact .left {
+  margin: 20px 20px;
+}
+.footer .container .contact .left h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.footer .container .contact .left h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.footer .container .contact .input {
+  margin: 0 10px;
+}
+.footer .container .contact .input input {
+  background: none;
+  border-radius: 19px;
+  border: 2px solid #ccc;
+  outline: none;
+  padding: 10px 20px;
+}
+.footer .container .contact .input input::-moz-placeholder {
+  color: #ccc;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.footer .container .contact .input input::placeholder {
+  color: #ccc;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.footer .container .contact .btn button {
+  outline: none;
+  border: none;
+  background: var(--gradientColor);
+  border-radius: 20px;
+  padding: 8px 40px;
+  color: white;
+  cursor: pointer;
+}
+.footer .container .contact .btn button:hover {
+  background: var(--SecondaryColor);
+}
+.footer .container .card {
+  margin-top: 80px;
+  background: rgb(236, 245, 247);
+  height: -moz-max-content;
+  height: max-content;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  font-family: "Times New Roman", Times, serif;
+  container-type: inline-size;
+}
+.footer .container .card .info {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.footer .container .card .info .left-side,
+.footer .container .card .info .right-side {
+  flex-basis: 70%;
+  padding: 20px;
+}
+.footer .container .card .info .left-side .logo {
+  margin-bottom: 15px;
+  color: var(--blackColor);
+  font-weight: bold;
+}
+.footer .container .card .info .left-side .icon {
+  color: var(--PrimaryColor);
+}
+.footer .container .card .info .left-side .text {
+  color: var(--textColor);
+  font-size: small;
+  font-weight: 600;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+}
+.footer .container .card .info .right-side {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Times New Roman", Times, serif;
+}
+.footer .container .card .info .right-side ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--textColor);
+  font-size: small;
+  font-weight: 600;
+  text-align: justify;
+}
+.footer .container .card .info .right-side ul li .icon {
+  font-size: 0.7rem;
+}
+.footer .container .card .info .right-side ul li h2 {
+  color: black;
+}
+.footer .container .card .copy {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--gradientColor);
+  padding: 10px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.footer .container .card .copy .copyright {
+  text-align: center;
+  color: #ccc;
+}
+.footer .container .card .card > h2 {
+  font-size: 12cqi;
+}
+.footer .container .card .card > p {
+  font-size: 12cqi;
+}
+.footer .container .card .cardd > p {
+  font-size: 12cqi;
+}
+@media (max-width: 720px) {
+  .footer .container .card .info {
+    display: block;
+  }
+  .footer .container .card .info .left-side,
+  .footer .container .card .info .right-side {
+    padding: 0.5rem;
+  }
+}/*# sourceMappingURL=footer.css.map */

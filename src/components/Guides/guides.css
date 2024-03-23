@@ -1,0 +1,110 @@
+.guides {
+  margin: 70px 0;
+}
+.guides .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--SecondaryColor);
+}
+.guides .text h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 10px;
+  margin-top: 10px;
+}
+.guides .text h1 {
+  color: rgb(27, 27, 27);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.guides .content-guides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.guides .content-guides .guide {
+  width: calc(30% - 70px);
+  display: flex;
+  height: -moz-max-content;
+  height: max-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.guides .content-guides .guide .image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.guides .content-guides .guide .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.8s; /* Add transition here */
+}
+.guides .content-guides .guide .image .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.474);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: transform 0.5s;
+}
+.guides .content-guides .guide .image .icons .icon {
+  font-size: 2.5rem;
+  color: var(--SecondaryColor);
+  border: 1px solid var(--SecondaryColor);
+  margin: 0 2px;
+  padding: 10px;
+  cursor: pointer;
+}
+.guides .content-guides .guide .image .icons .icon:hover {
+  background: var(--SecondaryColor);
+  color: white;
+}
+.guides .content-guides .guide .image .icons > * {
+  transform: translateY(25px);
+  transition: transform 0.5s;
+}
+.guides .content-guides .guide .title {
+  padding-bottom: 30px;
+  margin-top: 25px;
+  text-align: center;
+  transition: all 0.8s;
+}
+.guides .content-guides .guide .title h1 {
+  font-size: 1.24rem;
+  font-weight: 400;
+  color: var(--SecondaryColor);
+}
+.guides .content-guides .guide .title h2 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgb(107, 105, 105);
+}
+.guides .content-guides .guide:hover {
+  box-shadow: 0 4px 5px rgba(155, 166, 166, 0.7);
+  cursor: pointer;
+}
+.guides .content-guides .guide:hover .image img {
+  width: 100%;
+  transform: scale(1.2);
+}
+.guides .content-guides .guide:hover .icons > * {
+  transform: translateY(0px);
+}
+.guides .content-guides .guide:hover .icons {
+  opacity: 1;
+}/*# sourceMappingURL=guides.css.map */
