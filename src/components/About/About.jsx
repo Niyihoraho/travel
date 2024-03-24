@@ -37,7 +37,7 @@ const About = () => {
           </div>
         </div>
         <div className="content-quality">
-          <div className="Pricing">
+          
             <div className="left">
               <div className="icon"><FaMoneyCheckAlt/></div>
               <div className="content">
@@ -45,7 +45,7 @@ const About = () => {
                 <p>Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
               </div>
             </div>
-          </div>
+          
           <div className="middle">
               <div className="icon"><FaAward/></div>
               <div className="content">

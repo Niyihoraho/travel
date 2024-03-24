@@ -157,25 +157,26 @@
   }
   @media (max-width: 1000px) {
     .container {
+      margin: 0 50px;
       .roww {
          display: flex;
          flex-wrap: wrap;
         .cardDestination {
-          width: calc(50% - 22px); 
+          width: calc(45% + 10px); 
         }
       }
        
       }
      
   }
-  @media (max-width: 720px) {
+  @media (max-width: 760px) {
     .container {
       .roww {
          display: flex;
          flex-direction: column;
          justify-items: center;
         .cardDestination {
-          width: 80%;
+          width: 76%;
           display: flex;
           flex-direction: column;
         }

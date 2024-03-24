@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import "./guides.css";
-import "./swiper/swiper-bundle.min.css";
+
 
 
 const Guides = () => {

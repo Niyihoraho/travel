@@ -154,22 +154,25 @@
   background: var(--SecondaryColor);
 }
 @media (max-width: 1000px) {
+  .main .container {
+    margin: 0 50px;
+  }
   .main .container .roww {
     display: flex;
     flex-wrap: wrap;
   }
   .main .container .roww .cardDestination {
-    width: calc(50% - 22px);
+    width: calc(45% + 10px);
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   .main .container .roww {
     display: flex;
     flex-direction: column;
     justify-items: center;
   }
   .main .container .roww .cardDestination {
-    width: 80%;
+    width: 76%;
     display: flex;
     flex-direction: column;
   }

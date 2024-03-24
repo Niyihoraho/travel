@@ -96,4 +96,28 @@
 }
 .blogs .content-blog .blog:hover {
   cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .blogs .container {
+    margin: 0 50px;
+  }
+  .blogs .container .content-blog {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blogs .container .content-blog .blog {
+    width: calc(45% + 15px);
+  }
+}
+@media (max-width: 720px) {
+  .blogs .container .content-blog {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .blogs .container .content-blog .blog {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=blogpage.css.map */

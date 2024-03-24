@@ -107,4 +107,46 @@
 }
 .guides .content-guides .guide:hover .icons {
   opacity: 1;
+}
+@media (max-width: 1000px) {
+  .guides .container {
+    margin: 0 50px;
+  }
+  .guides .container .text {
+    container-type: inline-size;
+  }
+  .guides .container .text h2 {
+    font-size: 2cqi;
+  }
+  .guides .container .text h1 {
+    font-size: 4cqi;
+  }
+  .guides .container .content-guides {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .guides .container .content-guides .guide {
+    width: calc(30% + 10px);
+  }
+}
+@media (max-width: 760px) {
+  .guides .container .content-guides {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .guides .container .content-guides .guide {
+    width: 40%;
+    margin-bottom: 27px;
+  }
+}
+@media (max-width: 600px) {
+  .guides .container .content-guides {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .guides .container .content-guides .guide {
+    width: 80%;
+    margin-bottom: 27px;
+  }
 }/*# sourceMappingURL=guides.css.map */
