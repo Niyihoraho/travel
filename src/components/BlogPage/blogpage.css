@@ -110,6 +110,9 @@
   }
 }
 @media (max-width: 720px) {
+  .blogs .container {
+    margin: auto;
+  }
   .blogs .container .content-blog {
     display: flex;
     flex-direction: column;
@@ -117,6 +120,21 @@
   }
   .blogs .container .content-blog .blog {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 460px) {
+  .blogs .container {
+    margin: auto;
+  }
+  .blogs .container .content-blog {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .blogs .container .content-blog .blog {
+    width: 90%;
     display: flex;
     flex-direction: column;
   }

@@ -146,6 +146,9 @@
   }
 }
 @media (max-width: 507px) {
+  .services .container {
+    margin: auto;
+  }
   .services .container .content-services {
     display: flex;
     flex-direction: column;

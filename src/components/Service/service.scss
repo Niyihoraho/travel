@@ -156,6 +156,7 @@ $heroic: linear-gradient(to right, rgba(16, 181, 203, 0.3), rgba(0, 115, 168, 0.
   }
   @media (max-width: 507px) {
     .container { 
+          margin: auto;
        .content-services {
          display: flex;
          flex-direction: column;

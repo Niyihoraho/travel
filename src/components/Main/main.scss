@@ -6,6 +6,7 @@
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   
 }
 :root {
   --PrimaryColor: hsl(199, 100%, 33%);
@@ -185,21 +186,26 @@
       }
      
   }
-  // @media (max-width: 520px) {
-  //   .container {
-  //     .roww {
-  //        display: flex;
-  //        flex-direction: column;
-  //        justify-items: center;
-  //       .cardDestination {
-  //         width: 60%;
-  //         display: flex;
-  //         flex-direction: column;
-  //       }
-  //     }
+  @media (max-width: 590px) {
+    .container {
+      margin: 0;
+      overflow: hidden;
+      .roww {
+         display: flex;
+         flex-direction: column;
+         justify-items: center;
+         overflow: hidden;
+        .cardDestination {
+          width:calc(80% + 50px);
+          min-width: 200px;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+        }
+      }
        
-  //     }
+      }
      
-  // }
+  }
   
 }

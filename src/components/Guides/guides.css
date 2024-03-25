@@ -140,6 +140,9 @@
   }
 }
 @media (max-width: 600px) {
+  .guides .container {
+    margin: auto;
+  }
   .guides .container .content-guides {
     display: flex;
     flex-wrap: wrap;

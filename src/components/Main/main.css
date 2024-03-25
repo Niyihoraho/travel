@@ -176,4 +176,23 @@
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 590px) {
+  .main .container {
+    margin: 0;
+    overflow: hidden;
+  }
+  .main .container .roww {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    overflow: hidden;
+  }
+  .main .container .roww .cardDestination {
+    width: calc(80% + 50px);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
 }/*# sourceMappingURL=main.css.map */

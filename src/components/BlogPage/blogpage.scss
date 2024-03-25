@@ -112,12 +112,28 @@
   }
   @media (max-width: 720px) {
     .container {
+      margin: auto;
       .content-blog {
         display: flex;
         flex-direction: column;
         justify-items: center;
         .blog {
           width: 80%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  @media (max-width: 460px) {
+    .container {
+      margin: auto;
+      .content-blog {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        .blog {
+          width: 90%;
           display: flex;
           flex-direction: column;
         }
