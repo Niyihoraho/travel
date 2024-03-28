@@ -13,14 +13,14 @@ const Navbar = ({ title }) => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  const [active, setActive] = useState('bar');
+  const [active, setActive] = useState("bar");
 
   const togglMenu = () => {
-    setActive('nav');
+    setActive("nav");
   };
 
   const close = () => {
-    setActive('bar');
+    setActive("bar");
   };
 
   return (
@@ -32,8 +32,8 @@ const Navbar = ({ title }) => {
               <MdOutlineTravelExplore className="icon" />
               Travel.
             </div>
-            <div className="close" >
-              <AiFillCloseCircle className="iconClose" onClick={close}/>
+            <div className="close">
+              <AiFillCloseCircle className="iconClose" onClick={close} />
             </div>
           </div>
 
@@ -105,32 +105,41 @@ const Navbar = ({ title }) => {
               <h2 data-aos="fade-up">{title}</h2>
               <h1 data-aos="fade-up">Search Your Place</h1>
             </div>
-            <div className="card" data-aos="fade-up">
-              <form action="" className="row">
-                <div className="textInput">
-                  <label htmlFor="text">search your destination:</label>
-                  <div className="input">
-                    <input type="text" placeholder="enter Place here..." />
-                    <GrLocation className="icon" />
-                  </div>
-                </div>
 
-                <div className="dateInput">
-                  <label htmlFor="date">select you data:</label>
-                  <div className="input">
-                    <input type="date" />
-                  </div>
+            <div className="cardDiv grid" data-aos="fade-up">
+              <div className="destinationInput">
+                <label htmlFor="city">search your destination:</label>
+                <div className="select flex custom-select">
+                  <select>
+                    <option selected="">Destination</option>
+                    <option value="1">Destination 1</option>
+                    <option value="2">Destination 1</option>
+                    <option value="3">Destination 1</option>
+                  </select>
+                  <GrLocation className="icon" />
                 </div>
-                <div className="price">
-                  <span className="row">
-                    <p className="tx">max price:</p>
-                    <h3 className="tx">$5000</h3>
-                  </span>
-                  <div className="input">
-                    <input type="range" max="10000" min="0" />
-                  </div>
+                
+              </div>
+
+              <div className="dateInput">
+                <label htmlFor="city">Select your date here:</label>
+                <div className="input flex">
+                  <input type="date" />
                 </div>
-              </form>
+              </div>
+              <div className="destinationInput">
+                <label htmlFor="city">search your destination:</label>
+                <div className="select flex">
+                  <select className="select" id="city">
+                    <option selected="">Destination</option>
+                    <option value="1">Destination 1</option>
+                    <option value="2">Destination 1</option>
+                    <option value="3">Destination 1</option>
+                  </select>
+                  <GrLocation className="icon" />
+                </div>
+                
+              </div>
             </div>
           </div>
         </div>

@@ -30,6 +30,12 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  .grid {
+    display: grid;
+    align-items: center;
+  }
+
   .navBar {
     position: fixed;
     width: 100%;
@@ -227,183 +233,9 @@ header {
       }
     }
   }
-  @media screen and (max-width: 1005px) {
-    form {
-      display: flex;
-      justify-content: start;
-      align-items: start;
-      padding: 0 2rem;
 
-      span p,
-      h3 {
-        margin-left: 1rem;
-      }
-
-      .input {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 30px;
-        padding: 0 3rem;
-        background: rgba(224, 224, 224, 0.865);
-        border-radius: 3rem;
-        margin-top: 1rem;
-        margin-left: 0.4rem;
-
-        input {
-          width: 100%;
-          border: none;
-          outline: none;
-          background: none;
-          color: var(--greyText);
-          font-weight: 400;
-          &::placeholder {
-            font-size: small;
-          }
-        }
-        .icon {
-          position: relative;
-          font-size: 1rem;
-          left: 20%;
-        }
-      }
-      .textInput {
-        label {
-          font-size: 0.78rem;
-          font-weight: 600;
-          color: var(--textColor);
-          margin-left: 0.4rem;
-        }
-      }
-      .dateInput {
-        label {
-          font-size: 0.78rem;
-          font-weight: 600;
-          color: var(--textColor);
-          padding-left: 1rem;
-        }
-        .input {
-          padding: 0 1rem;
-          input {
-            padding: 0 4rem;
-          }
-        }
-      }
-      .price {
-        span {
-          font-size: 0.78rem;
-          font-weight: 600;
-          color: var(--textColor);
-        }
-        .input {
-          padding: 0 1rem;
-          input {
-            width: 100%;
-            accent-color: var(--textColor);
-            padding: 0 4rem;
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 855px) {
-    .card {
-      form {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        flex-wrap: wrap;
-        .textInput,
-        .textInput,
-        .price {
-          display: flex;
-          flex-direction: column;
-        }
-        .price {
-          position: relative;
-          left: -24%;
-          margin-top: 30px;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 693px) {
-    .content {
-      .card {
-        width: 100%;
-        position: relative;
-        background: var(--whiteColorDeam);
-        height: max-content;
-        padding: 36px 5px;
-        border-radius: 7px;
-        margin-top: 40px;
-        box-shadow: 0 3px 5px rgb(21, 30, 21);
-        form {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: flex-start;
-          width: 100%;
-          .price {
-            position: static;
-          }
-          .textInput {
-            width: 100%;
-          }
-          .dateInput {
-            width: 100%;
-          }
-          .price {
-            width: 100%;
-          }
-
-          .input {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 30px;
-            padding: 0 3rem;
-            background: rgba(224, 224, 224, 0.865);
-            border-radius: 3rem;
-            margin-top: 1rem;
-
-            input {
-              width: 100%;
-              border: none;
-              outline: none;
-              background: none;
-              color: var(--greyText);
-              font-weight: 400;
-              &::placeholder {
-                font-size: small;
-              }
-            }
-            .icon {
-              position: relative;
-              font-size: 1rem;
-              left: 10%;
-            }
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .filter {
-      position: absolute;
-      top: 92%;
-      left: 190%;
-      transform: translateY(10%);
-      transform: translateX(-20%);
-    }
-  }
-
-  .bar{
-
+  .bar {
     display: none;
-    
   }
 
   .nav {
@@ -416,8 +248,7 @@ header {
     backdrop-filter: blur(5px);
     line-height: 3;
     transition: width 0.5s ease;
-    
-  
+
     .leftLogo {
       position: relative;
       background: linear-gradient(
@@ -437,27 +268,97 @@ header {
         color: white;
       }
 
-      .close{
-        color:white;
-        cursor:pointer;
-        .iconClose{   
-          font-size:1.9rem;
+      .close {
+        color: white;
+        cursor: pointer;
+        .iconClose {
+          font-size: 1.9rem;
           transform: translateY(30%);
         }
       }
-     
     }
-    .rightLink{
+    .rightLink {
       transform: translateY(0%);
       ul {
-        padding:20px 20px,
+        padding: 20px 20px;
       }
     }
   }
   .link {
     color: white;
-    &:hover{
+    &:hover {
       color: var(--SecondaryColor);
+    }
+  }
+
+  .cardDiv {
+    position: relative;
+    padding: 2rem 1rem;
+    background: var(--whiteColor);
+    gap: 1rem;
+    border-radius: 10px;
+    label {
+      display: block;
+      color: var(--textColor);
+      padding-bottom: 10px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .select {
+      height: 40px;
+      padding: 0 1rem;
+      background: var(--inputColor);
+      border-radius: 3rem;
+      select {
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+
+    .input {
+      height: 40px;
+      padding: 0 1rem;
+      background: var(--inputColor);
+      border-radius: 3rem;
+      input {
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 13px;
+        font-size: 500;
+        &::placeholder {
+          font-size: 13px;
+        }
+      }
+    }
+    .icon {
+      font-size: 18px;
+      color: var(--PrimaryColor) !important;
+      margin-left: 10px;
+    }
+  }
+
+  // @media sreen and (min-width: 600px) {
+
+  //   .cardDiv{
+  //     grid-template-columns: repeat(2,1fr);
+  //   }
+  // }
+  @media screen and (min-width: 600px) {
+    .cardDiv {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .cardDiv {
+      padding: 2rem 1rem;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

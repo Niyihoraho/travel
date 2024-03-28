@@ -31,6 +31,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+header .grid {
+  display: grid;
+  align-items: center;
+}
 header .navBar {
   position: fixed;
   width: 100%;
@@ -217,168 +221,6 @@ header .content .card .filter .btn a {
 header .content .card .filter .btn:hover {
   background: var(--SecondaryColor);
 }
-@media screen and (max-width: 1005px) {
-  header form {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    padding: 0 2rem;
-  }
-  header form span p,
-  header form h3 {
-    margin-left: 1rem;
-  }
-  header form .input {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30px;
-    padding: 0 3rem;
-    background: rgba(224, 224, 224, 0.865);
-    border-radius: 3rem;
-    margin-top: 1rem;
-    margin-left: 0.4rem;
-  }
-  header form .input input {
-    width: 100%;
-    border: none;
-    outline: none;
-    background: none;
-    color: var(--greyText);
-    font-weight: 400;
-  }
-  header form .input input::-moz-placeholder {
-    font-size: small;
-  }
-  header form .input input::placeholder {
-    font-size: small;
-  }
-  header form .input .icon {
-    position: relative;
-    font-size: 1rem;
-    left: 20%;
-  }
-  header form .textInput label {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--textColor);
-    margin-left: 0.4rem;
-  }
-  header form .dateInput label {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--textColor);
-    padding-left: 1rem;
-  }
-  header form .dateInput .input {
-    padding: 0 1rem;
-  }
-  header form .dateInput .input input {
-    padding: 0 4rem;
-  }
-  header form .price span {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--textColor);
-  }
-  header form .price .input {
-    padding: 0 1rem;
-  }
-  header form .price .input input {
-    width: 100%;
-    accent-color: var(--textColor);
-    padding: 0 4rem;
-  }
-}
-@media screen and (max-width: 855px) {
-  header .card form {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: wrap;
-  }
-  header .card form .textInput,
-  header .card form .textInput,
-  header .card form .price {
-    display: flex;
-    flex-direction: column;
-  }
-  header .card form .price {
-    position: relative;
-    left: -24%;
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 693px) {
-  header .content .card {
-    width: 100%;
-    position: relative;
-    background: var(--whiteColorDeam);
-    height: -moz-max-content;
-    height: max-content;
-    padding: 36px 5px;
-    border-radius: 7px;
-    margin-top: 40px;
-    box-shadow: 0 3px 5px rgb(21, 30, 21);
-  }
-  header .content .card form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-  }
-  header .content .card form .price {
-    position: static;
-  }
-  header .content .card form .textInput {
-    width: 100%;
-  }
-  header .content .card form .dateInput {
-    width: 100%;
-  }
-  header .content .card form .price {
-    width: 100%;
-  }
-  header .content .card form .input {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30px;
-    padding: 0 3rem;
-    background: rgba(224, 224, 224, 0.865);
-    border-radius: 3rem;
-    margin-top: 1rem;
-  }
-  header .content .card form .input input {
-    width: 100%;
-    border: none;
-    outline: none;
-    background: none;
-    color: var(--greyText);
-    font-weight: 400;
-  }
-  header .content .card form .input input::-moz-placeholder {
-    font-size: small;
-  }
-  header .content .card form .input input::placeholder {
-    font-size: small;
-  }
-  header .content .card form .input .icon {
-    position: relative;
-    font-size: 1rem;
-    left: 10%;
-  }
-}
-@media screen and (max-width: 500px) {
-  header .filter {
-    position: absolute;
-    top: 92%;
-    left: 190%;
-    transform: translateY(10%);
-    transform: translateX(-20%);
-  }
-}
 header .bar {
   display: none;
 }
@@ -429,4 +271,68 @@ header .link {
 }
 header .link:hover {
   color: var(--SecondaryColor);
+}
+header .cardDiv {
+  position: relative;
+  padding: 2rem 1rem;
+  background: var(--whiteColor);
+  gap: 1rem;
+  border-radius: 10px;
+}
+header .cardDiv label {
+  display: block;
+  color: var(--textColor);
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+header .cardDiv .select {
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 3rem;
+}
+header .cardDiv .select select {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+}
+header .cardDiv .input {
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 3rem;
+}
+header .cardDiv .input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-size: 500;
+}
+header .cardDiv .input input::-moz-placeholder {
+  font-size: 13px;
+}
+header .cardDiv .input input::placeholder {
+  font-size: 13px;
+}
+header .cardDiv .icon {
+  font-size: 18px;
+  color: var(--PrimaryColor) !important;
+  margin-left: 10px;
+}
+@media screen and (min-width: 600px) {
+  header .cardDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 750px) {
+  header .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }/*# sourceMappingURL=navbar.css.map */

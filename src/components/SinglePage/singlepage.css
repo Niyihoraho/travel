@@ -57,12 +57,11 @@
   width: 100%;
   margin-top: 60px;
   margin-bottom: 40px;
-  margin-right: 40px;
 }
 .single .content-single .left .image {
   width: 110%;
   height: 70vh;
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 0 5px 10px rgb(169, 184, 186);
   overflow: hidden;
 }
@@ -91,19 +90,22 @@
   margin-top: 30px;
 }
 .single .content-single .right .cardd {
+  width: -moz-max-content;
+  width: max-content;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-top: 20px;
   width: 80%;
   background: rgb(236, 245, 247);
-  height: 70vh;
-  padding: 20px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 30px 20px;
   padding-left: 30px;
-  padding-right: 100px;
+  padding-right: 90px;
   container-type: inline-size;
-  transform: translateY(20px);
-  transform: translateX(40px);
+  margin-left: 80px;
   box-shadow: 0 5px 10px rgb(156, 184, 189);
+  border-radius: 5px;
 }
 .single .content-single .right .cardd h2 {
   color: var(--SecondaryColor);
@@ -137,19 +139,19 @@
 .single .content-single .right .cardd .icons .call {
   display: flex;
   color: var(--SecondaryColor);
+  font-size: 0.8rem;
 }
 .single .content-single .right .cardd .icons .call h1 {
-  font-size: 0.9rem;
   margin: 10px 0;
   letter-spacing: 5px;
-  margin-right: 10px;
   transform: translateY(-10px);
+  margin-right: 20px;
 }
 .single .content-single .right .cardd .icons .call span {
   letter-spacing: 4px;
 }
 .single .content-single .right .cardd > h2 {
-  font-size: 12cqi;
+  font-size: 10cqi;
 }
 .single .bar {
   display: none;
@@ -213,5 +215,44 @@
     display: flex;
     color: var(--PrimaryColor);
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 900px) {
+  .single .content-single {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .single .content-single .right .cardd {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    margin-bottom: 10px;
+    padding: 70px 50px;
+    overflow: hidden;
+    container-type: inline-size;
+    overflow: hidden;
+    margin-left: 0;
+  }
+  .single .content-single .right .call {
+    position: relative;
+    width: 100%;
+    container-type: inline-size;
+  }
+  .single .content-single .right .call h1 {
+    margin-right: auto;
+  }
+  .single .content-single .right .call p {
+    transform: translateY(-5000px);
+  }
+  .single .content-single .right .call > span {
+    font-size: 4cqi;
+  }
+  .single .content-single .right .call > h1 {
+    font-size: 5.5cqi;
+  }
+  .single .content-single .left .image {
+    width: 100%;
   }
 }/*# sourceMappingURL=singlepage.css.map */

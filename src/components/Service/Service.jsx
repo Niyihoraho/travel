@@ -3,14 +3,16 @@ import "./service.css";
 import { FaRoute } from "react-icons/fa";
 import { FaTicketAlt } from "react-icons/fa";
 import { FaHotel } from "react-icons/fa";
+import Aos from "aos";
 const Service = () => {
+
   return (
     <section className="services">
       <div className="container">
 
       <div className="title">
-                <h2>SERVICES</h2>
-                <h1>Tours & Travel Services</h1>
+                <h2 >SERVICES</h2>
+                <h1 >Tours & Travel Services</h1>
             </div>
         <div className="content-services">
             

@@ -51,4 +51,32 @@
 .description .content-description .right .map img {
   width: 100%;
   height: 100%;
+}
+.description .content-description .map {
+  position: relative;
+  height: 0;
+}
+.description .content-description .map iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+@media screen and (max-width: 900px) {
+  .description .content-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .description .content-description .left,
+  .description .content-description .right {
+    flex-basis: 90%;
+  }
+  .description .content-description .left {
+    margin-bottom: 30px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=description.css.map */

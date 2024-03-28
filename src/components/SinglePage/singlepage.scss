@@ -59,11 +59,10 @@
       width: 100%;
       margin-top: 60px;
       margin-bottom: 40px;
-      margin-right: 40px;
       .image {
         width: 110%;
         height: 70vh;
-        border-radius: 20px;
+        border-radius: 12px;
         box-shadow: 0 5px 10px rgb(169, 184, 186);
         overflow: hidden;
         img {
@@ -92,22 +91,24 @@
       width: 80%;
       margin-top: 30px;
       .cardd {
+        width: max-content;
         display: flex;
         flex-direction: column;
-        margin-left: 50px;
+        margin-top: 20px;
         width: 80%;
         background: rgb(236, 245, 247);
-        height: 70vh;
-        padding: 20px;
+        height: max-content;
+        padding: 30px 20px;
         padding-left: 30px;
-        padding-right: 100px;
+        padding-right: 90px;
         container-type: inline-size;
-        transform: translateY(20px);
-        transform: translateX(40px);
+        margin-left: 80px;
         box-shadow: 0 5px 10px rgb(156, 184, 189);
+        border-radius: 5px;
         h2 {
           color: var(--SecondaryColor);
           letter-spacing: 5px;
+
         }
         .icons {
           display: flex;
@@ -135,14 +136,17 @@
             }
           }
           .call {
+            
             display: flex;
             color: var(--SecondaryColor);
+            font-size: .8rem;
+
             h1 {
-              font-size: 0.9rem;
+              
               margin: 10px 0;
               letter-spacing: 5px;
-              margin-right: 10px;
               transform: translateY(-10px);
+              margin-right: 20px;
             }
             span {
               letter-spacing: 4px;
@@ -151,15 +155,13 @@
         }
       }
       .cardd > h2 {
-        font-size: 12cqi;
+        font-size: 10cqi;
       }
     }
   }
 
-  .bar{
-
+  .bar {
     display: none;
-    
   }
 
   .nav {
@@ -172,8 +174,7 @@
     backdrop-filter: blur(5px);
     line-height: 3;
     transition: width 0.5s ease;
-    
-  
+
     .leftLogo {
       position: relative;
       background: linear-gradient(
@@ -193,26 +194,25 @@
         color: white;
       }
 
-      .close{
-        color:white;
-        cursor:pointer;
-        .iconClose{   
-          font-size:1.9rem;
+      .close {
+        color: white;
+        cursor: pointer;
+        .iconClose {
+          font-size: 1.9rem;
           transform: translateY(30%);
         }
       }
-     
     }
-    .rightLink{
+    .rightLink {
       transform: translateY(0%);
       ul {
-        padding:20px 20px,
+        padding: 20px 20px;
       }
     }
   }
   .link {
     color: white;
-    &:hover{
+    &:hover {
       color: var(--SecondaryColor);
     }
   }
@@ -227,6 +227,50 @@
       display: flex;
       color: var(--PrimaryColor);
       cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .content-single {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      .right {
+        .cardd {
+          width: 100%;
+          height: max-content;
+          margin-bottom: 10px;
+          padding: 70px 50px;
+          overflow: hidden;
+          container-type: inline-size;
+          overflow: hidden;
+          margin-left: 0;
+        }
+
+        .call {
+          position: relative;
+          width: 100%;
+          container-type: inline-size;
+          h1{
+            margin-right: auto;
+          }
+          p{
+            transform: translateY(-5000px);
+          }
+        }
+        .call > span {
+          font-size: 4cqi;
+        }
+        .call > h1{
+          font-size: 5.5cqi;
+        }
+      }
+      .left {
+        .image {
+          width: 100%;
+        }
+      }
     }
   }
 }
