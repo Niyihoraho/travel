@@ -45,7 +45,8 @@ const About = () => {
               <div className="icon"><FaMoneyCheckAlt/></div>
               <div className="content">
                 <h2>Competitive Pricing</h2>
-                <p>Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                <p>Our tour and travel packages in Rwanda provide a perfect blend of great service, 
+                  affordable prices, and carefully planned trips that offer amazing experiences.</p>
               </div>
             </div>
           
@@ -53,14 +54,17 @@ const About = () => {
               <div className="icon"><FaAward/></div>
               <div className="content">
                 <h2>Best Services</h2>
-                <p>Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                <p>TURACOS Tours Africa Safaris in Rwanda offers exceptional service and 
+                   affordable prices for unforgettable travel experiences.</p>
               </div>
             </div>
             <div className="right">
               <div className="icon"><FaGlobe/></div>
               <div className="content">
                 <h2>Worldwide Coverage</h2>
-                <p>Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                <p>Turacos Tours Africa Safaris offers 
+                   an exceptional  national and 
+                  international safari experience.</p>
               </div>
             </div>
         </div>

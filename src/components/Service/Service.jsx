@@ -20,24 +20,22 @@ const Service = () => {
             <div className="icon"><FaRoute/></div>
             <h2>Travel Guide</h2>
             <p>
-              Justo sit justo eos amet tempor amet clita amet ipsum eos elitr.
-              Amet lorem est amet labore
+            You can refer to our travel guide with the help of 
+               our support team and our travel map
             </p>
           </div>
           <div className="middle">
             <div className="icon"><FaTicketAlt /></div>
             <h2>Ticket Booking</h2>
             <p>
-              Justo sit justo eos amet tempor amet clita amet ipsum eos elitr.
-              Amet lorem est amet labore
+              We offer various range of booking  service 
             </p>
           </div>
           <div className="right">
             <div className="icon"><FaHotel/></div>
             <h2>Hotel Booking</h2>
             <p>
-              Justo sit justo eos amet tempor amet clita amet ipsum eos elitr.
-              Amet lorem est amet labore
+              we offer hotel and related service booking     
             </p>
           </div>
         </div>
