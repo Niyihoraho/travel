@@ -24,7 +24,7 @@ const Navbar = ({ title }) => {
   };
 
   return (
-    <div>
+    <div id="home">
       <header>
         <nav className={active}>
           <div className="leftLogo">
@@ -40,7 +40,7 @@ const Navbar = ({ title }) => {
           <div className="rightLink">
             <ul>
               <li>
-                <Link to="/home" className="link">
+                <Link to="/home" href="#home" className="link">
                   Home
                 </Link>
               </li>

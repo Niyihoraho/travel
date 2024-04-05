@@ -1,8 +1,8 @@
 import React from "react";
 import "./about.css";
 import image from "../../set/gorila1.jpg";
-import image2 from "../../set/p2.jpg";
-import image3 from "../../set/p3.jpg";
+import image2 from "../../set/lake-kivu.jpg";
+import image3 from "../../set/package_mountain_2.jpeg";
 import { FaMoneyCheckAlt } from "react-icons/fa";
 import { FaAward } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";

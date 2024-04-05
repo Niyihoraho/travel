@@ -15,7 +15,6 @@ const Footer = () => {
   return (
     
       <section className="footer">
-
         <div className="setContent container">
           <div className="contactDiv flex">
             <div className="text" data-aos="fade-up">

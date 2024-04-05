@@ -72,6 +72,8 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: down;
+     object-position: down;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   transition: transform 0.9s;
@@ -86,7 +88,7 @@
 .main .container .roww .cardDestination .divider,
 .main .container .roww .cardDestination .details,
 .main .container .roww .cardDestination .btn {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding: 0 20px;
 }
 .main .container .roww .cardDestination .title h2 {
@@ -107,10 +109,10 @@
   justify-content: space-between;
 }
 .main .container .roww .cardDestination .price h3 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .main .container .roww .cardDestination .price p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .main .container .roww .cardDestination .divider {
   width: 95%;
@@ -119,10 +121,10 @@
   margin: 10px 5px;
 }
 .main .container .roww .cardDestination .details {
-  margin: 10px 0;
+  margin: 7px 0;
 }
 .main .container .roww .cardDestination .details p {
-  font-size: 0.79rem;
+  font-size: 0.77rem;
   color: var(--textColor);
   text-align: justify;
   font-weight: 500;

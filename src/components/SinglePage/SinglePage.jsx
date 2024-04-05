@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./singlepage.css";
-import image from "../../set/f1.jpg";
-import image1 from "../../set/blog-4.jpg";
-import image2 from "../../set/blog-5.jpg";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -12,13 +9,49 @@ import { TbGridDots } from "react-icons/tb";
 import { GrLocation } from "react-icons/gr";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import ImageSlider from "./ImageSlider";
+import axios from "axios";
+import Aos from "aos";
+
 
 const SinglePage = () => {
+
+  const { id } = useParams();
+
+  const [destination, setDestination] = useState({
+    name: "",
+    location: "",
+    description: "",
+    map_location: "",
+    image1: "",
+    image2: "",
+    image3: "",
+  });
+
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3000/SelectUpdateDestination/${id}`)
+      .then((res) => {
+        const data = res.data[0];
+        setDestination({
+          name: data.name,
+          location: data.location,
+          description: data.description,
+          map_location: data.map_location,
+          image1: data.image1,
+          image2: data.image2,
+          image3: data.image3,
+        });
+      })
+      .catch((err) => console.log(err));
+  }, [id]);
+
+
   const slides = [
-    { title: "image1", image: image },
-    { title: "image2", image: image1 },
-    { title: "image3", image: image2 },
+    { title: "image1", image: `http://localhost:3000/${destination.image1}` },
+    { title: "image2", image: 'http://localhost:3000/public/package_tradition_3.JPG'.replace(/\\/g, '/') },
+    { title: "image3", image: 'http://localhost:3000/public/package_monkey_1.jpeg'.replace(/\\/g, '/') },
   ];
+  
 
   const [active, setActive] = useState("bar");
 
@@ -107,9 +140,9 @@ const SinglePage = () => {
       <div className="container">
         <div className="content-single">
           <div className="left">
-            <h2>Akagera Nation Park</h2>
+            <h2>{destination.name}</h2>
             <div className="image">
-              <ImageSlider slides={slides} />
+              <img src={`http://localhost:3000/${destination.image1}`} alt="" />
             </div>
           </div>
           <div className="right">
