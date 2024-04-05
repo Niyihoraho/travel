@@ -38,11 +38,13 @@ const Footer = () => {
               </div>
 
               <div className="footerParagraph" data-aos="fade-up">
-                flexboxThis course is created to help you to learning basics of
-                flexbox it useful tools used in css This course is flexboxThis
-                course is created to help you to learning basics of flexbox it
-                useful tools used in css This course is created to help you This
-                course is created to help you to learning basics of flexbox
+              This is a big company operating in Rwanda-Karongi-Kibuye in western province,
+               starting since 2023. We have different tours like Lake kivu  boat ride,
+                Biking Adventure, Congo Nile Trails Hiking, hayaking, 
+                Sunset & Fisherman singing, Night Fishing experience, Coffee & Tea tour, 
+                Swimming cows Experience, Bird-watching tour, frogs tour, City tours, 
+                Village and culture tour, Accommodations, Camping Spots, 
+                Bikes & Kayaks Rental and other related activities.
               </div>
               <div className="footerSocials flex" data-aos="fade-up">
                <AiOutlineTwitter className="icon"/>
@@ -62,75 +64,75 @@ const Footer = () => {
 
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                Services
+                Coffee & Tea tour
               </li>
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                Insurance
+                Lake kivu  boat ride, 
               </li>
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                agency
+                Night Fishing experience
               </li>
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                Tourism
+                Bird-watching 
               </li>
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                Payment
-              </li>
-            </div>
-            <div className="linkGroup">
-              <span className="title">
-                OUR AGENCY
-              </span>
-
-              <li className="footerList flex">
-                <FiChevronRight className="icon"/>
-                Services
-              </li>
-              <li className="footerList flex">
-                <FiChevronRight className="icon"/>
-                Insurance
-              </li>
-              <li className="footerList flex">
-                <FiChevronRight className="icon"/>
-                agency
-              </li>
-              <li className="footerList flex">
-                <FiChevronRight className="icon"/>
-                Tourism
-              </li>
-              <li className="footerList flex">
-                <FiChevronRight className="icon"/>
-                Payment
+                Swimming cows Experience, 
               </li>
             </div>
             <div className="linkGroup">
               <span className="title">
-                OUR AGENCY
+              OUR Service
               </span>
 
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                Services
+                 Village and culture tour
               </li>
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                Insurance
+                Biking Adventure
               </li>
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                agency
+                Congo Nile Trails Hiking
               </li>
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                Tourism
+                Kayaking
               </li>
               <li className="footerList flex">
                 <FiChevronRight className="icon"/>
-                Payment
+                Sunset & Fisherman 
+              </li>
+            </div>
+            <div className="linkGroup">
+              <span className="title">
+                OUR Service
+              </span>
+
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Accommodations
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                City tours
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Bird-watching tour
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Camping Spots
+              </li>
+              <li className="footerList flex">
+                <FiChevronRight className="icon"/>
+                Bikes & Kayaks Rental 
               </li>
             </div>
             {/* ---------------------------------------------------------- */}
