@@ -24,10 +24,13 @@ const About = () => {
             </h1>
 
             <p>
-              Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore
-              sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet
-              dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed
-              diam duo
+            This is a big company operating in Rwanda-Karongi-Kibuye in western province, 
+            starting since 2023. We have different tours like Lake kivu  boat ride, 
+            Biking Adventure, Congo Nile Trails Hiking, Kayaking, Sunset & Fisherman singing,
+             Night Fishing experience, Coffee & Tea tour, Swimming cows Experience, 
+             Bird-watching tour, frogs tour, City tours, Village and culture tour, 
+             Accommodations, Camping Spots, Bikes & Kayaks Rental 
+             and other related activities.
             </p>
             <div className="images">
               <img src={image2} alt="" />
