@@ -7,8 +7,10 @@ import { GrLocation } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Descriptions from "../description/Descriptions";
 
-const Navbar = ({ title }) => {
+const Navbar = ({ title, destinations = [], setSelectedDestination, setSelectedDate }) => {
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -22,6 +24,15 @@ const Navbar = ({ title }) => {
   const close = () => {
     setActive("bar");
   };
+
+  const handleDestinationChange = (e) => {
+    setSelectedDestination(e.target.value);
+  };
+
+  const handleDateChange = (e) => {
+    setSelectedDate(e.target.value);
+  };
+
 
   return (
     <div id="home">
@@ -110,12 +121,13 @@ const Navbar = ({ title }) => {
               <div className="destinationInput">
                 <label htmlFor="city">search your destination:</label>
                 <div className="select flex custom-select">
-                  <select>
-                    <option selected="">Destination</option>
-                    <option value="1">Destination 1</option>
-                    <option value="2">Destination 1</option>
-                    <option value="3">Destination 1</option>
+                <select onChange={handleDestinationChange} id="destination">
+                    <option value="">Destination</option>
+                    {destinations.map((destination, index) => (
+                      <option key={index} value={destination.name}>{destination.name}</option>
+                    ))}
                   </select>
+                
                   <GrLocation className="icon" />
                 </div>
                 
@@ -128,13 +140,13 @@ const Navbar = ({ title }) => {
                 </div>
               </div>
               <div className="destinationInput">
-                <label htmlFor="city">search your destination:</label>
+                <label htmlFor="city">search Location:</label>
                 <div className="select flex">
-                  <select className="select" id="city">
-                    <option selected="">Destination</option>
-                    <option value="1">Destination 1</option>
-                    <option value="2">Destination 1</option>
-                    <option value="3">Destination 1</option>
+                <select onChange={handleDateChange} id="location">
+                    <option value="">Location</option>
+                    {destinations.map((destination, index) => (
+                      <option key={index} value={destination.location}>{destination.location}</option>
+                    ))}
                   </select>
                   <GrLocation className="icon" />
                 </div>

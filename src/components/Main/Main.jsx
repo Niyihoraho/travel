@@ -4,25 +4,24 @@ import { useState } from "react";
 import "./main.css";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
-import axios from "axios";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Main = () => {
-  const [destinations, setDestinations] = useState([]);
+const Main = ({ destinations = [], selectedDestination, selectedDate }) => {
+  const filteredDestinations = destinations.filter((destination) => {
+    const matchesDestination = selectedDestination
+      ? destination.name === selectedDestination
+      : true;
+    const matchesDate = selectedDate
+      ? destination.location === selectedDate
+      : true;
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/destinationsSelect")
-      .then((res) => setDestinations(res.data))
-      .catch((err) => console.log(err));
-  }, []);
+    return matchesDestination && matchesDate;
+  });
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
-
- 
 
   return (
     <div>
@@ -32,7 +31,7 @@ const Main = () => {
             <h1 data-aos="fade-up">Destinations</h1>
           </div>
           <div className="roww">
-            {destinations.map((destination, index) => (
+            {filteredDestinations.map((destination, index) => (
               <div className="cardDestination" data-aos="fade-up" key={index}>
                 <div className="image">
                   <img
@@ -60,7 +59,6 @@ const Main = () => {
                       DETAILS
                       <HiOutlineClipboardCheck className="icon" />
                     </Link>
-                
                   </button>
                 </div>
               </div>

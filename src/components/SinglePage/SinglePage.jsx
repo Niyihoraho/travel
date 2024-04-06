@@ -47,9 +47,9 @@ const SinglePage = () => {
 
 
   const slides = [
-    { title: "image1", image: `http://localhost:3000/${destination.image1}` },
-    { title: "image2", image: 'http://localhost:3000/public/package_tradition_3.JPG'.replace(/\\/g, '/') },
-    { title: "image3", image: 'http://localhost:3000/public/package_monkey_1.jpeg'.replace(/\\/g, '/') },
+    { title: "image1", image: `http://localhost:3000/${destination.image1.replace(/\\/g, '/')}` },
+    { title: "image2", image: `http://localhost:3000/${destination.image2.replace(/\\/g, '/')}` },
+    { title: "image3", image: `http://localhost:3000/${destination.image3.replace(/\\/g, '/')}` },
   ];
   
 
@@ -142,7 +142,8 @@ const SinglePage = () => {
           <div className="left">
             <h2>{destination.name}</h2>
             <div className="image">
-              <img src={`http://localhost:3000/${destination.image1}`} alt="" />
+              {/* <img src={`http://localhost:3000/${destination.image1}`} alt="" /> */}
+              <ImageSlider slides={slides}/>
             </div>
           </div>
           <div className="right">

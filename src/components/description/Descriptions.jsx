@@ -14,6 +14,7 @@ const Descriptions = () => {
     location: "",
     description: "",
     map_location: "",
+    details: "",
     image1: "",
     image2: "",
     image3: "",
@@ -46,14 +47,12 @@ const Descriptions = () => {
             <div className="description">
               <h2>Description</h2>
               <p>
-                {destination.detail}
+                {destination.details}
               </p>
             </div>
           </div>
           <div className="right">
-            <div className="map">
-            {destination.map_location}
-            </div>
+          <div className="map" dangerouslySetInnerHTML={{ __html: destination.map_location }} />
           </div>
         </div>
       </div>
